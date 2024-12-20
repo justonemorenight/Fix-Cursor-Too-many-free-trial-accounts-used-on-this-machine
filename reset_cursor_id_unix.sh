@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Set file path
-storage_file="$HOME/.config/Cursor/User/globalStorage/storage.json"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS
+    storage_file="$HOME/Library/Application Support/Cursor/User/globalStorage/storage.json"
+else
+    storage_file="$HOME/.config/Cursor/User/globalStorage/storage.json"
+fi
 
 # Check if file exists
 if [ ! -f "$storage_file" ]; then
