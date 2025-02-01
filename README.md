@@ -11,11 +11,11 @@ This tool is intended for legitimate users who encounter identification issues w
 
 ## Disclaimer
 
-- This script is provided for educational and troubleshooting purposes only
-- It is not intended to bypass software licensing or create unlimited trial accounts
-- Users should comply with Cursor Editor's terms of service and licensing agreements
-- The script authors are not responsible for any misuse or potential consequences
-- If you frequently encounter trial limitations, please consider purchasing a license to support the software developers
+- This script is provided for educational and troubleshooting purposes only.
+- It is not intended to bypass software licensing or create unlimited trial accounts.
+- Users should comply with Cursor Editor's terms of service and licensing agreements.
+- The script authors are not responsible for any misuse or potential consequences.
+- If you frequently encounter trial limitations, please consider purchasing a license to support the software developers.
 
 ## Description
 
@@ -48,17 +48,19 @@ Linux/macOS: ~/.config/Cursor/User/globalStorage/storage.json
 ## Usage
 
 ### Windows
-1. Run `reset_cursor_id_windows.bat`
-2. If prompted for admin rights, click "Yes"
+1. **Important:** Ensure that Cursor Editor is **open** before running the script.
+2. Run `reset_cursor_id_windows.bat`.
+3. If prompted for admin rights, click "Yes".
 
 ### Linux/macOS
-1. Make the script executable: `chmod +x reset_cursor_id_unix.sh`
-2. Run the script: `./reset_cursor_id_unix.sh`
+1. **Important:** Ensure that Cursor Editor is **open** before running the script.
+2. Make the script executable: `chmod +x reset_cursor_id_unix.sh`.
+3. Run the script: `./reset_cursor_id_unix.sh`.
 
 The scripts will automatically:
-- Generate new random IDs
-- Update the storage.json file
-- Display the newly generated IDs
+- Generate new random IDs.
+- Update the storage.json file.
+- Display the newly generated IDs.
 
 ## Features
 
@@ -74,9 +76,9 @@ The scripts will automatically:
 
 ## Important Notes
 
-- Close Cursor Editor before running the script
-- The storage.json file will be set to read-only after update
-- Backup is created automatically before any modifications
+- **For version 0.45:** Make sure Cursor Editor is open when running the script.
+- The storage.json file will be set to read-only after update.
+- A backup is created automatically before any modifications.
 
 ## Example Output
 
@@ -92,9 +94,9 @@ devDeviceId: [UUID format]
 ## Troubleshooting
 
 If you encounter issues:
-1. Ensure Cursor Editor is closed
-2. Run with appropriate permissions
-   - Windows: Run as administrator
-   - Linux/macOS: Ensure execute permissions (`chmod +x`)
-3. Check if the storage.json file exists
-4. Verify write permissions in the directory
+1. Ensure Cursor Editor is **open**.
+2. Run with appropriate permissions:
+   - Windows: Run as administrator.
+   - Linux/macOS: Ensure execute permissions (`chmod +x`).
+3. Check if the storage.json file exists.
+4. Verify write permissions in the directory.
