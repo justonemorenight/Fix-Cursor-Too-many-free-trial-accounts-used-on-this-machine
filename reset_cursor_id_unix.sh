@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Display the important message on the terminal
+echo "========================================="
+echo "IMPORTANT: Please ensure that Cursor is open when using version 0.45 and above."
+echo "========================================="
+
 # ---------- File Path Configuration ----------
 if [[ "$OSTYPE" == darwin* ]]; then
     storage_file="$HOME/Library/Application Support/Cursor/User/globalStorage/storage.json"
