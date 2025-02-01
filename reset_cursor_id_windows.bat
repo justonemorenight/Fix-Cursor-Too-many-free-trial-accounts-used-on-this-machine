@@ -1,4 +1,8 @@
 @echo off
+echo =========================================
+echo IMPORTANT: Please ensure that Cursor is open for version 0.45 and above.
+echo =========================================
+
 :: Check for admin privileges
 net session >nul 2>&1
 if %errorLevel% neq 0 (
@@ -26,11 +30,13 @@ for /f "delims=" %%a in ('powershell -Command "-join ((48..57) + (97..102) | Get
 attrib -r "%storage_file%"
 
 :: Create new JSON content
-echo {> "%storage_file%"
-echo   "telemetry.macMachineId": "%hex1%",>> "%storage_file%"
-echo   "telemetry.machineId": "%hex2%",>> "%storage_file%"
-echo   "telemetry.devDeviceId": "%uuid%">> "%storage_file%"
-echo }>> "%storage_file%"
+(
+    echo {
+    echo   "telemetry.macMachineId": "%hex1%",
+    echo   "telemetry.machineId": "%hex2%",
+    echo   "telemetry.devDeviceId": "%uuid%"
+    echo }
+) > "%storage_file%"
 
 :: Set read-only attribute
 attrib +r "%storage_file%"
@@ -42,4 +48,4 @@ echo macMachineId: %hex1%
 echo machineId: %hex2%
 echo devDeviceId: %uuid%
 echo.
-pause 
+pause
