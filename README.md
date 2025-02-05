@@ -47,15 +47,16 @@ Linux/macOS: ~/.config/Cursor/User/globalStorage/storage.json
 
 ## Usage
 
-### Windows
-1. **Important:** Ensure that Cursor Editor is **open** before running the script.
-2. Run `reset_cursor_id_windows.bat`.
-3. If prompted for admin rights, click "Yes".
+### Steps (For All Versions of Cursor IDE)
 
-### Linux/macOS
-1. **Important:** Ensure that Cursor Editor is **open** before running the script.
-2. Make the script executable: `chmod +x reset_cursor_id_unix.sh`.
-3. Run the script: `./reset_cursor_id_unix.sh`.
+1. **Log out** from your current account in Cursor IDE.
+2. **Close Cursor IDE completely.** Ensure no background processes of Cursor are running.
+3. **Run the script:**
+   - **Windows:** Run `reset_cursor_id_windows.bat` as administrator.
+   - **Linux/macOS:**
+     1. Make the script executable: `chmod +x reset_cursor_id_unix.sh`
+     2. Run the script: `./reset_cursor_id_unix.sh`
+4. **Open Cursor IDE** and log in again.
 
 The scripts will automatically:
 - Generate new random IDs.
@@ -76,7 +77,7 @@ The scripts will automatically:
 
 ## Important Notes
 
-- **For version 0.45:** Make sure Cursor Editor is open when running the script.
+- The script works for **all versions** of Cursor IDE.
 - The storage.json file will be set to read-only after update.
 - A backup is created automatically before any modifications.
 
@@ -94,9 +95,10 @@ devDeviceId: [UUID format]
 ## Troubleshooting
 
 If you encounter issues:
-1. Ensure Cursor Editor is **open**.
+1. Ensure Cursor IDE is **completely closed** before running the script.
 2. Run with appropriate permissions:
    - Windows: Run as administrator.
    - Linux/macOS: Ensure execute permissions (`chmod +x`).
-3. Check if the storage.json file exists.
+3. Check if the storage.json file exists in the specified location.
 4. Verify write permissions in the directory.
+
