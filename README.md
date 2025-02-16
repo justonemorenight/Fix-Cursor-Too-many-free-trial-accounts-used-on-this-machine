@@ -46,6 +46,9 @@ Linux/macOS: ~/.config/Cursor/User/globalStorage/storage.json
 ```
 
 ## Usage
+### Additional Steps (If the Error Persists)
+1. Use a different email address to create a new account after running the script.
+2. Flush DNS cache and restart your network to reset network-based tracking methods.
 
 ### Steps (For All Versions of Cursor IDE)
 
