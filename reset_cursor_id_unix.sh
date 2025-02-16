@@ -2,7 +2,7 @@
 
 # Display the important message on the terminal
 echo "========================================="
-echo "IMPORTANT: Please ensure that Cursor is open when using version 0.45 and above."
+echo "IMPORTANT: Please read the README carefully before running the script for the best results."
 echo "========================================="
 
 # ---------- File Path Configuration ----------
